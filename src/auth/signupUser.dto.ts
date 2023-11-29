@@ -1,7 +1,7 @@
-export class CreateUserDto {
+export class SignupUserDto {
     email: string;
     firstName: string;
     lastName: string;
-    passwordHash: string;
+    password: string;
     role: string;
 }

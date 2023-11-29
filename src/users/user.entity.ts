@@ -19,8 +19,8 @@ export class User {
     @Column({ name: "last_name" })
     lastName: string;
 
-    @Column()
-    password: string;
+    @Column({ name: "password_hash" })
+    passwordHash: string;
 
     @Column({ name: "created_at" })
     createdAt: Date;
