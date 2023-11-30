@@ -11,6 +11,7 @@ import { AuthModule } from "src/auth/auth.module";
     providers: [
         ...cabProviders,
         CabService
-    ]
+    ],
+    exports: [CabService]
 })
 export class CabModule { };

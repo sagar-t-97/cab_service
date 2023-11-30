@@ -29,4 +29,13 @@ export class CabService {
         });
         return cabs;
     }
+
+    async findById(cabId: number): Promise<Cab> {
+        const cab = await this.cabRepository.findOne({
+            where: {
+                id: cabId
+            }
+        })
+        return cab;
+    }
 }
