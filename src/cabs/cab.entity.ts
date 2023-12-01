@@ -19,4 +19,7 @@ export class Cab {
 
     @Column()
     active: boolean;
+
+    @Column({ type: "point", srid: 3857 })
+    location: string;
 }
